@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:ital@1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #093680;
+  color: white;
+  font-family: "Roboto", Sans-Serif;
+}
+.back-to-top {
+  display: inline-block;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.8rem;
+  font-weight: lighter !important;
+  color: #fff !important;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #d73d33;
+  border-radius: 50px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+.back-to-top:active {
+  background-color: crimson;
+}
