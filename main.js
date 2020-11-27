@@ -1,4 +1,4 @@
-const api_key = config.MY_KEY;
+const api_key = "723e9d00facb1e4fc80dce35a26f3ef7";
 let row = document.querySelector(".row");
 let tvRow = document.querySelector(".tvRow");
 let searchBar = document.querySelector("#searchBar");
