@@ -25,6 +25,9 @@ searchBtn.addEventListener("click", (e) => {
       while (div) {
         div = "";
       }
+if(data.results.length ==0){
+div ='No movies found'
+}
       for (var i = 0; i < data.results.length; i++) {
         fetch(
           `https://api.themoviedb.org/3/movie/${data.results[i].id}?api_key=${api_key}&append_to_response=videos`
@@ -33,6 +36,7 @@ searchBtn.addEventListener("click", (e) => {
             return movie.json();
           })
           .then((movie) => {
+
             movies.style.visibility = "visible";
 
             div += `
@@ -66,7 +70,9 @@ searchBtn.addEventListener("click", (e) => {
       while (tvDiv) {
         tvDiv = "";
       }
-      for (var i = 0; i < data.results.length; i++) {
+    
+        console.log(data)
+      for (var i =0; i < data.results.length; i++) {
         fetch(
           `https://api.themoviedb.org/3/tv/${data.results[i].id}?api_key=${api_key}&append_to_response=videos`
         )
